@@ -4,7 +4,7 @@ services:
   ganache:
     image: trufflesuite/ganache-cli
     ports:
-      - "8545:8545"
+      - "7545:7545"
 
   truffle:
     build:

@@ -37,7 +37,11 @@ migrate:
 	$(DOCKER_COMPOSE) exec truffle truffle migrate
 
 console: ## Run the interactive truffle console
+console:
 	$(DOCKER_COMPOSE) exec truffle truffle console
+
+test: ## Run the test suite
+	$(DOCKER_COMPOSE) exec truffle truffle test
 
 .PHONY: kill install reset start stop clean no-docker
 
