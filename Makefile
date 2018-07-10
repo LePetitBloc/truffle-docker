@@ -43,7 +43,7 @@ console:
 test: ## Run the test suite
 	$(DOCKER_COMPOSE) exec truffle truffle test
 
-.PHONY: kill install reset start stop clean no-docker
+.PHONY: build kill install reset start stop no-docker compile migrate console test
 
 .DEFAULT_GOAL := help
 help:
